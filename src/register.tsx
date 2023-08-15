@@ -12,8 +12,8 @@ addons.register("naver/storyboook-addon-preview", () => {
         title: "Code Preview",
         type: types.PANEL,
         paramKey: "preview",
-        render: ({ active, key }) => (
-            <AddonPanel active={active} key={key} >
+        render: ({ active }) => (
+            <AddonPanel active={active} >
                 <PreviewPanel />
             </AddonPanel>
         ),
